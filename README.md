@@ -17,7 +17,7 @@ TomoTherapy and TomoDirect are a registered trademarks of Accuray Incorporated. 
 
 To install the function as a MATLAB App, download and execute the `CreateTomoDirectDose.mlappinstall` file from this directory. If downloading the repository via git, make sure to download all submodules by running  `git clone --recursive https://github.com/mwgeurts/tomodirect_beams`.
 
-## Use and Documentation
+## Usage and Documentation
 
 This function can be executed without input arguments, upon which it will prompt the user to select the DICOM RTPLAN file and then the folder containing the binary dose files. The function will scan recursively through subfolders to identify all binary dose files. The per beam DICOM RTDOSE files will be written to the same folder as the selected DICOM RTPLAN file. 
 
