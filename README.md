@@ -13,13 +13,15 @@ TomoTherapy and TomoDirect are a registered trademarks of Accuray Incorporated. 
 * [Compatibility and Requirements](README.md#compatibility-and-requirements)
 * [Troubleshooting](README.md#troubleshooting)
 
-## Installation and Use
+## Installation
 
 To install the function as a MATLAB App, download and execute the `CreateTomoDirectDose.mlappinstall` file from this directory. If downloading the repository via git, make sure to download all submodules by running  `git clone --recursive https://github.com/mwgeurts/tomodirect_beams`.
 
+## Use and Documentation
+
 This function can be executed without input arguments, upon which it will prompt the user to select the DICOM RTPLAN file and then the folder containing the binary dose files. The function will scan recursively through subfolders to identify all binary dose files. The per beam DICOM RTDOSE files will be written to the same folder as the selected DICOM RTPLAN file. 
 
-Alternatively, the function can be executed with two inputs, the first the file name (full or relative to this function) of the DICOM RTPlan file and the second as the path to the binary folder. A flag to apply the beam isocenter offset can optionally be passed as a third input argument('yes' or 'no').
+Alternatively, the function can be executed with two inputs, the first the file name (full or relative to this function) of the DICOM RTPlan file and the second as the path to the binary folder. A flag to apply the beam isocenter offset can optionally be passed as a third input argument(`yes` or `no`).
 
 Finally, if specified the written DICOM files will be returned as a cell array. Several examples are shown below:
 
@@ -41,8 +43,4 @@ This application records key input parameters and results to a log.txt file usin
 
 ## License
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
+Released under the GNU GPL v3.0 License.  See the [LICENSE](LICENSE) file for further details.
